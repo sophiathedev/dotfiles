@@ -92,6 +92,7 @@ Plug 'junegunn/fzf.vim'
 Plug 'windwp/nvim-autopairs'
 Plug 'nvim-tree/nvim-tree.lua'
 Plug 'neoclide/vim-jsx-improve'
+Plug 'elixir-editors/vim-elixir'
 
 -- code completion
 Plug('neoclide/coc.nvim', {['branch'] = 'release'})
