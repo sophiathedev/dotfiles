@@ -8,6 +8,10 @@
       "initializationOptions": {
         "usePlaceholders": true
       }
+    },
+    "elixirLS": {
+      "command": "elixir-ls",
+      "filetypes": ["elixir", "eelixir"]
     }
   }
 }
