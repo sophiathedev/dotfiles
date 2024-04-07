@@ -87,6 +87,7 @@ Plug 'Mofiqul/vscode.nvim'
 Plug 'altercation/vim-colors-solarized'
 Plug 'junegunn/fzf'
 Plug 'junegunn/fzf.vim'
+Plug 'andweeb/presence.nvim'
 
 -- coding plugin
 Plug 'windwp/nvim-autopairs'
@@ -257,3 +258,11 @@ if g.neovide then
   require('vscode').load()
 end
 ]]--
+
+-- setup discord presence
+require("presence").setup({
+  auto_update = true,
+  enable_line_number = false,
+  neovim_image_text = "It isn't Neovim, it's Neovide",
+  line_number_text = "Line %s/%s",
+})
