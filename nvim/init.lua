@@ -82,7 +82,8 @@ end
 --Plug 'joshdick/onedark.vim'
 Plug 'nvim-tree/nvim-web-devicons'
 Plug 'projekt0n/github-nvim-theme'
-Plug 'Mofiqul/vscode.nvim'
+Plug 'sjl/badwolf'
+--Plug 'Mofiqul/vscode.nvim'
 --Plug 'nyoom-engineering/nyoom.nvim'
 Plug 'altercation/vim-colors-solarized'
 Plug 'junegunn/fzf'
@@ -172,7 +173,7 @@ if g.neovide then
   --vim.cmd [[ hi MatchParen guibg=#09d7e8 ]]
   --vim.cmd [[ hi Visual     guibg=#09d7e8 ]]
 
-  vim.cmd('colorscheme github_light')
+  vim.cmd('colorscheme badwolf')
 else
   o.background = "light"
   vim.cmd('colorscheme solarized')
