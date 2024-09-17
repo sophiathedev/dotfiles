@@ -22,6 +22,6 @@ disk "/" {
 }
 
 time {
-	format = "%Y-%m-%d %H:%M:%S"
+	format = "%d-%m-%Y %H:%M:%S"
 }
 
