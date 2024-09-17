@@ -1,0 +1,27 @@
+
+general {
+	colors = true
+	interval = 1
+}
+
+order += "cpu_usage"
+order += "memory"
+order += "disk /"
+order += "time"
+
+cpu_usage {
+	format = "CPU: %usage"
+}
+
+memory {
+	format = "RAM: %used / %total"
+}
+
+disk "/" {
+	format = "DISK: %used (%avail)"
+}
+
+time {
+	format = "%Y-%m-%d %H:%M:%S"
+}
+
