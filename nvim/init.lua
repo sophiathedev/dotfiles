@@ -90,7 +90,8 @@ vim.opt.shiftwidth = 4
 vim.opt.tabstop = 4
 vim.opt.expandtab = false
 
-vim.opt.number = true
+--vim.opt.number = false
+vim.opt.relativenumber = true
 vim.opt.ruler = true
 vim.opt.showcmd = true
 vim.opt.title = true
@@ -98,9 +99,11 @@ vim.opt.joinspaces = false
 vim.opt.mouse = 'a'
 
 vim.opt.conceallevel = 2
+
 vim.opt.undofile = true
+
 vim.opt.autoread = true
-vim.cmd [[ autocmd BufEnter,FocusGained * if mode() == 'n' && getcmdwintype() == '' | checktime | endif ]]
+vim.cmd [[autocmd BufEnter,FocusGained * if mode() == 'n' && getcmdwintype() == '' | checktime | endif]]
 vim.opt.updatetime = 50
 vim.opt.splitright = true
 vim.opt.splitbelow = true
@@ -138,3 +141,4 @@ vim.keymap.set("n", "tj", "<C-w>j", { noremap = true, silent = true })
 vim.keymap.set("n", "tk", "<C-w>k", { noremap = true, silent = true })
 
 vim.cmd [[ highlight Pmenu ctermfg=15 ctermbg=0 guifg=#ffffff guibg=#000000 ]]
+vim.api.nvim_set_keymap('n', 'gA', ':%y+<CR>', { noremap = true })
