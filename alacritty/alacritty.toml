@@ -1,0 +1,11 @@
+general.import = [
+  "~/.config/alacritty/themes/themes/solarized_light.toml"
+]
+
+[window]
+padding.x = 5
+padding.y = 5
+
+[font]
+normal.family = "DejaVuSansM Nerd Font"
+size = 8.5
