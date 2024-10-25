@@ -140,5 +140,5 @@ vim.keymap.set("n", "th", "<C-w>h", { noremap = true, silent = true })
 vim.keymap.set("n", "tj", "<C-w>j", { noremap = true, silent = true })
 vim.keymap.set("n", "tk", "<C-w>k", { noremap = true, silent = true })
 
-vim.cmd [[ highlight Pmenu ctermfg=15 ctermbg=0 guifg=#ffffff guibg=#000000 ]]
+vim.cmd [[ highlight Pmenu ctermfg=16 ctermbg=0 guifg=#ffffff guibg=#5f5f5f ]]
 vim.api.nvim_set_keymap('n', 'gA', ':%y+<CR>', { noremap = true })
